@@ -67,9 +67,9 @@
     <table style="width: 50%" ; align="center">
         <!-- align is deprecated attribute. -->
         <tr>
-            <th>Name</th>
+            <th colspan="2">Name</th>
             <th>City</th>
-            <th>Pin</th>
+            <!-- <th>Pin</th> -->
         </tr>
         <tr>
             <td>Shank</td>
@@ -79,7 +79,12 @@
         <tr>
             <td>Bhavesh</td>
             <td>Pune</td>
-            <td>421111</td>
+            <td rowspan="2">421111</td>
+        </tr>
+        <tr>
+            <td>Coddy</td>
+            <td>Atlanta</td>
+            <!-- <td>421001</td> -->
         </tr>
     </table>
 
@@ -130,7 +135,9 @@
         <!-- acronym is deprecated tag. -->
     </p>
 
-
+    <p> <marquee behavior="scroll" direction="right">Marquee Test (Scrolling).</marquee></p>
+    <p> <marquee behavior="slide" direction="right">Marquee Test (Sliding).</marquee></p>
+    <p> <marquee behavior="alternate" direction="right">Marquee Test (Alternate).</marquee></p>
 </body>
 
 </html>
