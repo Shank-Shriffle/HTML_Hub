@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div>
+        <form autocomplete="on">
+            <h3>Registration Form</h3>
+            <label for="fname">First Name: </label><input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name: </label><input type="text" id="lname" name="lname"><br>
+
+            <label for="dob">DOB: </label><input type="datetime" name="dob" id="dob">
+
+            <p>Gender:</p>
+            <input type="radio" id="m" name="Gender"><label for="m">Male</label>
+            <input type="radio" id="f" name="Gender"><label for="f">Female</label><br>
+
+            <p>City:
+                <select name="city" id="city" size="2">
+                    <option value="">Select a city</option>
+                    <option value="indore">Indore</option>
+                    <option value="pune">Pune</option>
+                    <option value="banglore">Banglore</option>
+                    <option value="hyderabad">Hyderabad</option>
+                </select>
+            </p>
+            <p>Documents available: </p>
+            <input type="checkbox" id="aadhar"><label for="aadhar">Aadhar Card</label><br>
+            <input type="checkbox" id="pan"><label for="pan">PAN Card</label><br>
+            <input type="checkbox" id="voter_id"><label for="voter_id">Voter ID</label><br><br>
+
+            <p>Brief Introduction: </p>
+            <textarea name="Message" id="txt" cols="30" rows="10">Enter text here.</textarea><br>
+            <input type="submit" value="Submit">
+
+            <input type="button" onclick="alert('Visit w3schools for more info!')" value="More Info!">
+        </form>
+    </div>
+</body>
+
+</html>
