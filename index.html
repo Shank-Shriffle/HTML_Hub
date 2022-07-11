@@ -2,26 +2,141 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Page Title </title>
+    <table>
+        <style>
+            table,
+            th,
+            td {
+                border: 4px solid slategrey;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            th {
+                background-color: blanchedalmond;
+            }
+        </style>
+    </table>
 </head>
 
 <body style="background-color: aquamarine;">
     <h1> First Heading </h1>
-    <p style="color: yellowgreen;"> This is paragraph. </p>
+    <p style="color: brown;"> This is paragraph.
+        Second line of paragraph.
+    </p>
+    <span> This is span para.
+        Second line of span.
+    </span>
+
+    <h2>Adding image</h2>
     <img src="Shriffle.jpg" width="300" height="300" alt="Shriffle Image">
-    <h5> Above is Shriffle Image </h5>
     <a href="https://www.shriffle.com/">Visit Shriffle</a>
     <p style="color:red;">This is a red paragraph.</p>
     <p title="I am tooltip">Paragraph with title attribute.</p>
+
     <h3> ----------Formatting Tags---------- </h3>
     <b> This is Bold text.</b> <i> this is Italic text.</i> <u>This is Underlined text.</u> Line break <br>
     <strong>This text is important! (strong tag).</strong> <em>This text is emphasized.</em> <small>This is some smaller
         text.</small>
-    <p>This is <mark><style>Marked</style></mark> text. This is <del> deleted</del> and <ins>inserted</ins> text. Testing
+    <p>This is <mark>
+            Marked
+        </mark> text. This is <del> deleted</del> and <ins>inserted</ins> text. Testing
         subscripted H<sub>2</sub>O and superscripted a<sup>2</sup> + b<sup>2</sup> text.</p>
     Line of body (Directly in body without any further tag)
 
+    <h3> ----------Image Tags---------- </h3>
+    <!-- Comments here -->
+    <pre style="background-image: url(back_image.jpg);"> Testing background images here.
+        Line1
+        Line2</pre>
+    <pre>
 
+        lets see
+        what the pre   tag do. 
+        if it has 8 space           here.</pre>
+
+    <h3>----------Table Tags----------</h3>
+    <table style="width: 50%" ; align="center">
+        <!-- align is deprecated attribute. -->
+        <tr>
+            <th colspan="2">Name</th>
+            <th>City</th>
+            <!-- <th>Pin</th> -->
+        </tr>
+        <tr>
+            <td>Shank</td>
+            <td>Indore</td>
+            <td>452009</td>
+        </tr>
+        <tr>
+            <td>Bhavesh</td>
+            <td>Pune</td>
+            <td rowspan="2">421111</td>
+        </tr>
+        <tr>
+            <td>Coddy</td>
+            <td>Atlanta</td>
+            <!-- <td>421001</td> -->
+        </tr>
+    </table>
+
+    <h3>----------List Tags----------</h3>
+    <ul>
+        <li>Unordered List element 1</li>
+        <li>ul element 2</li>
+        <li>ul element 3</li>
+    </ul>
+    <ol>
+        <li>Ordered List element 1</li>
+        <li>ol element 2</li>
+        <li>ol element 3</li>
+    </ol>
+    <h2>Description List</h2>
+    <dl>
+        <dt>Defined term 1</dt>
+        <dd>- This is Description</dd>
+        <dt>dt 2</dt>
+        <dd>- This is Description</dd>
+    </dl>
+
+    <h3>----------Link Tags----------</h3>
+    <h2>Text as Link</h2>
+    <p><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3 School Link</a>
+        <em>Opens in new windows.</em>
+        <!-- Difference between _parent, _top, _self ? -->
+    </p>
+    <h2>Image as Link</h2>
+    <p><a href="https://www.geeksforgeeks.org/html-links/?ref=lbp"><img src="Redirect.png" alt="GFG Image Link"
+                style="width: 60px; height: 30px;"></a> <em>Opens in parent frame.</em> </p>
+    <h2>Email link</h2>
+    <a href="mailto: shashankp@shriffle.com">Send mail!</a>
+
+    <h3>----------Iframe Tags----------</h3>
+    <iframe src="https://www.indiatoday.in/news.html" frameborder="10px"></iframe>
+    <p>Iframe is a deprecated tag.</p>
+
+    <h3>----------Form Tags----------</h3>
+    <a href="Registration_Form.html">Open Form</a>
+
+    <h3>----------Phrase Tags----------</h3>
+    <p>This is abbrevation tag
+        <abbr title="World Health Organization">WHO</abbr>
+    </p>
+    <p>This is acronym tag
+        <acronym title="Geeks For Geeks">GFG</acronym>
+        <!-- acronym is deprecated tag. -->
+    </p>
+    <p> <marquee behavior="scroll" direction="right">Marquee Test (Scrolling).</marquee></p>
+    <p> <marquee behavior="slide" direction="right">Marquee Test (Sliding).</marquee></p>
+    <p> <marquee behavior="alternate" direction="right">Marquee Test (Alternate).</marquee></p>
 </body>
 
 </html>
