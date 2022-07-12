@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Redirect.png" type="image/x-icon">
     <title> Page Title </title>
     <table>
+        <!-- This is Internal/Embedded CSS. -->
         <style>
             table,
             th,
@@ -27,9 +30,10 @@
     </table>
 </head>
 
-<body style="background-color: aquamarine;">
+<body>
     <h1> First Heading </h1>
     <p style="color: brown;"> This is paragraph.
+        <!-- This is inline CSS. -->
         Second line of paragraph.
     </p>
     <span> This is span para.
@@ -107,17 +111,19 @@
         <dd>- This is Description</dd>
     </dl>
 
-    <h3>----------Link Tags----------</h3>
-    <h2>Text as Link</h2>
-    <p><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3 School Link</a>
-        <em>Opens in new windows.</em>
-        <!-- Difference between _parent, _top, _self ? -->
-    </p>
-    <h2>Image as Link</h2>
-    <p><a href="https://www.geeksforgeeks.org/html-links/?ref=lbp"><img src="Redirect.png" alt="GFG Image Link"
-                style="width: 60px; height: 30px;"></a> <em>Opens in parent frame.</em> </p>
-    <h2>Email link</h2>
-    <a href="mailto: shashankp@shriffle.com">Send mail!</a>
+    <div class="border">
+        <h3>----------Link Tags----------</h3>
+        <h2>Text as Link</h2>
+        <p><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3 School Link</a>
+            <em>Opens in new windows.</em>
+            <!-- Difference between _parent, _top, _self ? -->
+        </p>
+        <h2>Image as Link</h2>
+        <p class="class1"><a href="https://www.geeksforgeeks.org/html-links/?ref=lbp"><img src="Redirect.png"
+                    alt="GFG Image Link" style="width: 60px; height: 30px;"></a> <em>Opens in parent frame.</em> </p>
+        <h2>Email link</h2>
+        <a href="mailto: shashankp@shriffle.com">Send mail!</a>
+    </div>
 
     <h3>----------Iframe Tags----------</h3>
     <iframe src="https://www.indiatoday.in/news.html" frameborder="10px"></iframe>
@@ -134,9 +140,16 @@
         <acronym title="Geeks For Geeks">GFG</acronym>
         <!-- acronym is deprecated tag. -->
     </p>
-    <p> <marquee behavior="scroll" direction="right">Marquee Test (Scrolling).</marquee></p>
-    <p> <marquee behavior="slide" direction="right">Marquee Test (Sliding).</marquee></p>
-    <p> <marquee behavior="alternate" direction="right">Marquee Test (Alternate).</marquee></p>
+    <p>
+        <marquee behavior="scroll" direction="right">Marquee Test (Scrolling).</marquee>
+    </p>
+    <p>
+        <marquee behavior="slide" direction="right">Marquee Test (Sliding).</marquee>
+    </p>
+    <p>
+        <marquee behavior="alternate" direction="right">Marquee Test (Alternate).</marquee>
+    </p>
 </body>
+
 
 </html>

@@ -1,0 +1,25 @@
+body {
+    background-color: beige;
+}
+
+em {
+    color: crimson;
+}
+
+.class1 {
+    background-color: darksalmon;
+}
+.border {
+    border: 5px solid cornflowerblue;
+    /* border-style: dotted;
+    border-color: seagreen; */
+    padding: 10px;
+}
+
+#id1 {
+    border:2px;
+    border-style: solid;
+}
+.center {
+    align-self: center;
+}
