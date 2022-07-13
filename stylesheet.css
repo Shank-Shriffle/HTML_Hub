@@ -1,3 +1,5 @@
+/* @import url(form_style.css); */
+
 body {
     background-color: beige;
 }
@@ -9,6 +11,7 @@ em {
 .class1 {
     background-color: darksalmon;
 }
+
 .border {
     border: 5px solid cornflowerblue;
     /* border-style: dotted;
@@ -17,9 +20,70 @@ em {
 }
 
 #id1 {
-    border:2px;
+    border: 2px;
     border-style: solid;
 }
+
 .center {
     align-self: center;
+}
+
+.font {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: large;
+}
+
+.text {
+    background-color: bisque;
+    color: indigo;
+    text-align: center;
+    /* direction:rtl;
+    unicode-bidi: bidi-override; */
+    text-decoration-line: overline;
+    text-decoration-color: violet;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-transform: capitalize;
+    /* text-indent: 50px; */
+    letter-spacing: 4px;
+    line-height: 300%;
+    word-spacing: 20px;
+    /* white-space: nowrap; */
+    text-shadow: 2px 2px orangered;
+}
+
+a.l1:link {
+    color: red;
+    text-decoration: none;
+    /* To remove (default)underline from link.   */
+}
+
+a.l1:visited {
+    color: blue;
+}
+
+a.l1:hover {
+    color: hotpink;
+}
+
+a.l1:active {
+    /* As soon as clicked. */
+    color: lightgreen;
+}
+
+#customer table{
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-y: scroll;
+}
+#customer tr:nth-child(odd) {
+    background-color: #cccccc;
+    text-align: right;
+}
+#customer tr:hover {
+    background-color: #76faad;
 }
