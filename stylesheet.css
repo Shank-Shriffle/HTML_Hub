@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @import url(form_style.css); */
 
 body {
@@ -10,13 +11,6 @@ em {
 
 .class1 {
     background-color: darksalmon;
-}
-
-.border {
-    border: 5px solid cornflowerblue;
-    /* border-style: dotted;
-    border-color: seagreen; */
-    padding: 10px;
 }
 
 #id1 {
@@ -74,16 +68,70 @@ a.l1:active {
     color: lightgreen;
 }
 
-#customer table{
+#customer table {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
     width: 100%;
     overflow-y: scroll;
 }
+
 #customer tr:nth-child(odd) {
     background-color: #cccccc;
     text-align: right;
 }
+
 #customer tr:hover {
     background-color: #76faad;
+}
+
+.border {
+    border: 5px solid cornflowerblue;
+    /* Shorthand */
+    /* border-style: dotted;
+    border-color: seagreen; */
+    border-width: medium;
+    /* border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid; */
+    border-radius: 20px;
+}
+
+.margin {
+    margin: 30px 20px;
+}
+
+.padding {
+    padding: 25px 50px 75px 100px;
+    /* if an element has a specified width,
+    the padding added to that element will
+     be added to the total width of the element. 
+     i.e. if width: 300px
+             padding: 20px
+    Then total width = 300 + 25(left pad.) + 25(right pad.) = 350*/
+}
+
+p {
+    color: black !important;
+    color: navy;
+}
+
+p {
+    color: red;
+}
+
+/* In absence of !important rule red color will be applied.   */
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    body {
+        background-color: #76faad;
+        width: 50%;
+    }
+}
+
+.bimage {
+    border: 10px solid transparent;
+    border-image: url(bdr_img.jpeg) 30 stretch;
 }
